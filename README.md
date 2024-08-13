@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
 
+- Web Application (4200)
+- Admin Module (4201)
+
 ## Description
 
 This project is a simple starter project for new Angular 18 projects using Supabase.  
