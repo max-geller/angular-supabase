@@ -7,7 +7,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is a simple starter project for new Angular 18 projects using Supabase.  
+This project is a simple starter project for new Angular 18 projects using Supabase, and contains both a web application and an admin module. The web application is a simple website that allows users to login, register, configure a user profile, change application settings, setup a billing account, and view a basic list of items. The admin module is a simple website that allows administrators to manage users, application settings, view logs of user activity, and monitor the application. The project is designed to be a starting point for new Angular projects.
+
+Although the project has a single git repository, the web application and admin module are separate Angular projects that are built and deployed independently. A traditional monorepo was considered, but as this is a starter template, it was decided that separate Angular projects would be easier to manage and deploy depending on the specific use-case.
+
+The web application and admin module are served on separate ports, and can be deployed to separate servers if desiredm with the web application being served on port 4200 by defualt, while the admin module is served on port 4201.
 
 ## Features
 
@@ -22,17 +26,20 @@ This project is a simple starter project for new Angular 18 projects using Supab
 - Mobile Responsive Design
 - Custom Error / Not Found Pages
 
+## Environment Variables
+
+The project uses environment variables to configure the application. The environment variables are stored in the `environments` folder, and are used to manage external API connection strings.
+
 ## To Do
 
-- [ ] Add Angular Material
+- [X] Add Angular Material
+- [ ] Custom Environment Variables
+- [ ] Add Angular Flex Layout
+- [ ] Configure Application Themes
 - [ ] Add Supabase Authentication
 - [ ] Add Supabase Storage
-- [ ] Add Login Worklow
-- [ ] Add Registration Workflow
-- [ ] Add Forgot Password Workflow
 - [ ] Add Stripe Integration
-- [ ] Add User Profiles
-- [ ] Add User Avatars
+- [ ] Add Email Service
 - [ ] Add User Settings
 - [ ] Add Timezones
 - [ ] Add Admin Module
@@ -44,6 +51,34 @@ This project is a simple starter project for new Angular 18 projects using Supab
 - [ ] Add Loading Spinner
 - [ ] Add Toast Notifications
 - [ ] Add Snackbar Notifications
+
+### Web Application
+
+- [ ] Add Login Worklow
+- [ ] Add Registration Workflow
+- [ ] Add Forgot Password Workflow
+- [ ] Add User Dashboard
+- [ ] Add User Profile
+- [ ] Add User Settings
+- [ ] Add User Billing
+- [ ] Add User Avatars
+
+### Admin Module
+
+- [ ] Add User Activity Logs
+- [ ] Add User Management
+- [ ] Add User Roles
+- [ ] Add User Permissions
+- [ ] Add User Settings
+- [ ] Add Application Settings
+- [ ] Add Application Logs
+- [ ] Add Application Monitoring
+- [ ] Database Monitoring
+- [ ] Add Server Monitoring
+- [ ] Add Server Logs
+- [ ] User Reset Password
+- [ ] User Role Impersonation
+- [ ] Customize Registration Email
 
 ## Development server
 
@@ -64,10 +99,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 ## Version Control
 
